@@ -1,0 +1,23 @@
+HTML:
+-basic boilerplate with link to css stylesheet.
+-A body and header to contain the game. The header has a button to show the rules and a list of rules to dsiplay.
+-Main section controls the game with divs for dice rolls
+-There are p elements to display the info about the rolls
+-Score option div of radio buttons with various scoring options.
+-A keep score button which allows you to sumbit the radio score you have selected. 
+-A div to display the scores. 
+
+CSS:
+-Basic layout stuff with a root to hold color variables for the game. 
+-Styling for the contianer displaying the rules text. Also display property to show / hide when button is pushed.
+-Main section using grid display
+-Flex commands to display the actual dice values.
+-Styling and action for the button
+
+JS:
+-avriables to grab all relevant info and buttons for the game using getElementById() from the DOM
+-some let variables which will change as the game is played and values are updated. 
+-Roll dice funciton which runs a loop to genrate a random roll b/w 1-6 and push it to an array of die values. Updates and displays the roll info and allows the scoring radio buttons to be selected if thier criteria has been met by the roll. Funcitonality to check for all the possible scoring cases and activate the radio options. 
+-Reset game function which clears all the let variables out and reset the text and html to starting values. 
+-Even listener on the rolldice button which alerts if turn is over or else runs all the logic. 
+-A keep selected score button which updates the score based on selected values. It also checks if the max number of rounds has been reached. 
